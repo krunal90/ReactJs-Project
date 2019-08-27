@@ -19,7 +19,7 @@ setInterval(Time, 1000);
 class App extends Component {
   constructor() {
     super();
-    this.state = {name: "Krunal", val: "this is input value"}
+    this.state = {nameFirst: "Krunal", val: "this is input value"}
     this.changeHomeLink = this.changeHomeLink.bind(this);
   }
 
@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <p className="App-intro">
-          <h1>Welcome {this.state.name} <Time /> </h1>
+          <h1>Welcome {this.state.nameFirst} <Time /> </h1>
          {this.state.name}
         </p>
         <input id="inputVal" type="text" />
