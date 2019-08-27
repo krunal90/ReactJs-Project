@@ -2,10 +2,24 @@ import React, { Component } from 'react';
 import Passdata from './passdata';
 import './App.css';
 
+function Time() {
+  var hours = new Date().getHours();
+  var timeLaps = '';
+  if(hours >= 1 && hours <12) {
+    timeLaps = "Good Morning!";
+  } else if(hours >= 12 && hours < 16) {
+    timeLaps ="Good Afternoon!";
+  } else {
+    timeLaps = "Good Evening!"
+  }
+  return (<span>{timeLaps}</span>);
+}
+setInterval(Time, 1000);
+
 class App extends Component {
   constructor() {
     super();
-    this.state = {name: "Home Link", val: "this is input value"}
+    this.state = {name: "Krunal", val: "this is input value"}
     this.changeHomeLink = this.changeHomeLink.bind(this);
   }
 
@@ -21,6 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <p className="App-intro">
+          <h1>Welcome {this.state.name} <Time /> </h1>
          {this.state.name}
         </p>
         <input id="inputVal" type="text" />
