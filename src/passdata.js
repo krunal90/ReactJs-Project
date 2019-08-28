@@ -1,4 +1,5 @@
 import  React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
 
 export default class Passdata extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export default class Passdata extends Component {
   render() {
     return(
       <div>
-        <button onClick={this.changeLink}>Change</button>
+        <Button onClick={this.changeLink} varient="flat" size="xxl">Change</Button>
         <p>{this.props.inputVal}</p>
       </div>
     );
