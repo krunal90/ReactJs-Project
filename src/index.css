@@ -2,4 +2,23 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: gray;
+}
+
+.heading {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: App-logo-spin;
+  margin: 20px 0px 10px 0px;
+  font-family: cursive;
+  text-align: center;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-30px);} 
+  60% {transform: translateY(-15px);} 
 }
