@@ -1,3 +1,8 @@
-.navbar_Brand_Name { 
+.navigationBar {
+  width: 97%;
+  margin: auto;
+  border-radius: 8px;
+}
+.navbar_Brand_Name {
   font-family: cursive;
 }

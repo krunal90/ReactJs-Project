@@ -7,7 +7,8 @@ export default class NavbarLink extends Component {
   render() {
     return (
         <Navbar className="navigationBar" bg="dark" variant="dark">
-          <Navbar.Brand href="javascript:void(0')" className="navbar_Brand_Name">Krunal Patel</Navbar.Brand>
+          <Navbar.Brand href="#home" className="navbar_Brand_Name">
+            Krunal Patel</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="#aboutMe" active>About Me</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
