@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavbarLink from './navbar';
 import './App.css';
+import About from './uiComponents/aboutMe';
+import Contact from './uiComponents/contact';
 
 class App extends Component {
   constructor() {
@@ -10,9 +13,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="AppBody">
-        <NavbarLink />
-      </div>
+      
+        <Router>
+          <div className="AppBody">
+            <NavbarLink />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            </div>
+        </Router>
+      
+      
     )
   }
 }
