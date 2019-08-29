@@ -2,7 +2,11 @@
   text-align: center;
   width: 60%;
   background-color: white;
-  margin: auto;
+  margin: 50px auto;
   min-height: 200vh;
-  border-radius: 2%;
+  border-radius: 8px;
+  padding-top: 18px;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
