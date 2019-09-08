@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import SideBar from './uiComponents/Sidebar';
 import './index.css';
 
 function Time() {
@@ -26,6 +27,7 @@ class Index extends React.Component {
           Hey! <Time />
         </h3>
         <App />
+        <SideBar />
       </div>
     )
   }
