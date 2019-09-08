@@ -4,6 +4,7 @@ import NavbarLink from './navbar';
 import './App.css';
 import About from './uiComponents/aboutMe';
 import Contact from './uiComponents/contact';
+import Home from './uiComponents/Home';
 
 class App extends Component {
   constructor() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Router>
           <div className="AppBody">
             <NavbarLink />
+            <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             </div>

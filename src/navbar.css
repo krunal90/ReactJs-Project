@@ -5,8 +5,30 @@
 }
 .navbar_Brand_Name {
   font-family: cursive;
+  cursor: pointer;
+}
+
+.navBrandLink{
+  color: white;
+}
+
+.navBrandLink:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.mr-auto {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-left: 30px;
+}
+
+.navLink:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .navLink {
-  color: white;
+  color: grey;
 }
