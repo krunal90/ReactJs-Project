@@ -6,7 +6,6 @@ export default class SideBar extends Component {
     super(props)
     this.state = {weatherData:[],cityName:null}
   }
-  cityName
   componentDidMount() {
     const success = (position) => {
       var lat = position.coords.latitude;
@@ -23,12 +22,12 @@ export default class SideBar extends Component {
   }
 
   getCityName(event) {
-    this.cityName = event.currentTarget.value;
+    this.setState({cityName:event.currentTarget.value});
   }
 
   getWeatherData() {
-    axios.get("http://api.openweathermap.org/data/2.5/forecast?q="+this.cityName+"&appid=4d0cedb0b2ae0c240bf3c08ab455915e")
-    .then((response) => this.weatherData = response.data)
+    axios.get("http://api.openweathermap.org/data/2.5/forecast?q="+this.state.cityName+"&appid=4d0cedb0b2ae0c240bf3c08ab455915e")
+    .then((response) => this.setState({weatherData:response.data}))
     .catch((error) => alert(error));
     console.log(this.state.weatherData.list);
   }
